@@ -1,0 +1,76 @@
+
+
+html,body{overflow:auto}
+.header{
+	header: 0.44rem;
+	@include flexbox();
+	
+	padding: .08rem .15rem;
+	@include justify-content(space-around);
+	@include align-items(center)
+	.search{
+		
+		padding-left: .1rem;
+	}
+	input {
+		border:none;
+		height: .3rem;
+		margin-left: .05rem
+	}
+}
+
+.falsh-buy {
+	padding: .2rem;
+	ul{
+		@include flexbox();
+		@include justify-content(space-around);
+		color: red;
+		white-space: nowrap;
+        overflow-x: auto;
+		white-space: nowrap;
+		> li {
+			margin-left: .10rem;
+		}
+	}
+}
+.falsh-buy-list {
+
+	dl {
+		padding: .1rem;
+		margin: 0 .1rem;
+		@include flexbox();
+		dt {
+			img{ display: block; height:1.5rem ;width:1.06rem }
+		}
+		> dd {
+			width: 63%;
+			
+			padding: 0.2rem .1rem;
+			
+			> div{
+				padding-top: .07rem;
+				@include flexbox();
+				@include justify-content(space-between);
+			}
+			
+		}
+
+	}
+}
+
+.flash-girl{
+	@include flexbox();
+	@include justify-content(space-around);
+	flex-wrap: wrap;
+	> dl{
+		width: 48%;
+		dt{
+			
+			img{display: block;width: 100%}
+		}
+		dd {
+			>p {width: 100%;@include ellipsis();color: red;}
+		}
+	}
+}
+

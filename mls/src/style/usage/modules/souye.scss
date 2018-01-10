@@ -1,0 +1,25 @@
+ .app-nav-list{
+ 	padding: .05rem .025rem;
+      @include flexbox()
+      @include justify-content(space-between);
+
+      dl{
+      	@include flexbox();
+      	@include flex-direction(column);
+      	@include justify-content(space-between);
+
+      	@include align-items(center);
+      }
+      img{
+        display: block;
+        height: .8rem;
+        width: .8rem;
+      }
+      
+    }
+
+.nav-line{
+  	width: 375px;height: 10px;
+  	background: #ccc;
+  	opacity: .5;
+  }

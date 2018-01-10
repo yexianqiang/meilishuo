@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/api': {
+            target: 'http://m.meilishuo.com', // target host 
+            changeOrigin: true,               // needed for virtual hosted sites 
+            
+            pathRewrite: {
+                '^/api': '' 
+                     
+            },
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

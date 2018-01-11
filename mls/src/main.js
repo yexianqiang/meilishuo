@@ -15,7 +15,7 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
 import './modules/directives'
-
+import fifter from './modules/filter'
 import store from './vuex/store'
 
 

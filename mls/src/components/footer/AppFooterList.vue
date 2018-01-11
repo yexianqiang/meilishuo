@@ -2,7 +2,10 @@
 <template>
 	<div class="app-footer-list ">
 		<div class="footer-list" v-for="nav in navs">
-			<li >{{nav.content}}</li>
+			<ul>
+				<li @click="turnout(nav.name)">{{nav.content}}</li>
+			</ul>
+			
 		</div>
 		
 	</div>	
@@ -15,6 +18,12 @@
 		data() {
 			return {
 
+			}
+		},
+		methods: {
+			turnout(name) {
+				
+				this.$router.push({name})
 			}
 		}
 	}

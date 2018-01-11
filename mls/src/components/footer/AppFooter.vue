@@ -16,10 +16,10 @@
 		data: function() {
 			return {
 				navs: [
-					{id:1,content:'首页',name:'souye'},
-					{id:2,content:'分类',name:'fenlei'},
-					{id:3,content:'购物车',name:'gwc'},
-					{id:4,content:'我',name:'wo'},
+					{id:1,content:'首页',name:'main'},
+					{id:2,content:'分类',name:'main'},
+					{id:3,content:'购物车',name:'car'},
+					{id:4,content:'我',name:'main'},
 				]
 			}
 		},
@@ -30,6 +30,6 @@
 </script>
 
 <style lang="scss" scoped>
-	.app-footer{z-index:399}
+	
 
 </style>

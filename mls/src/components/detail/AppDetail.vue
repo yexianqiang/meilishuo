@@ -51,7 +51,7 @@ export default {
   		.then((res)=>{
   			// console.log(res)
   			_this.detail_good = res.data.result
-  			console.log( _this.detail_good)
+  			// console.log( _this.detail_good)
   		})
   	}
   },

@@ -16,5 +16,5 @@ export default {
 </script>
   
 <style lang="scss">
-  
+  	#app{overflow-x: hidden;-webkit-overflow-scrolling:touch}
 </style>
